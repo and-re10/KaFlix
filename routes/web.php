@@ -17,4 +17,4 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/MyVideos', 'MyVideosController');
+Route::resource('/MyVideos', 'MyVideosController');

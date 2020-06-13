@@ -14,12 +14,25 @@ use App\MyVideo;
 */
 
 Route::get('/index', function () {
-    return view('index');
+
+    $videos = MyVideo::all();
+
+    return view('index', compact('videos'));
 });
 
 Route::get('/sport', function () {
     $videos = MyVideo::all();
     return view('filters.sports.index', compact('videos'));
 })->name('sport');
+
+Route::get('/code', function () {
+    $videos = MyVideo::all();
+    return view('filters.code.index', compact('videos'));
+})->name('code');
+
+Route::get('/music', function () {
+    $videos = MyVideo::all();
+    return view('filters.music.index', compact('videos'));
+})->name('music');
 
 Route::resource('/MyVideos', 'MyVideosController');

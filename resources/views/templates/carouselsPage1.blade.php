@@ -1,65 +1,84 @@
 <section>
-    <a href=""><h1 class="ml-5 pl-5 text-light">Os meus videos</h1></a>
+    <a href="{{route('MyVideos.index')}}"><h1 class="ml-5 pl-5 text-light">Os meus videos</h1></a>
     {{-- Carousel meus videos --}}
     <div id="carousel1" class="carousel slide py-5" data-ride="carousel">
         <div class="carousel-inner">
+            {{-- creer un controle pour afficher les mes videos 
+            Si var =! 0 et var <= 3
+            Sinon Si var =! 0 et var <= 6
+            Sinon Si var =! 0 var > 6
+            Sinon  --}}
+            @if (count($videos) != 0 && count($videos) <= 3)
             <div class="carousel-item active">
-                <div class="row justify-content-center mx-5">
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                <div class="row justify-content-center">
+                    @for ($i = 0; $i < count($videos); $i++)
+                        <div class="col-md-3 ">
+                            {!!$videos[$i]->video!!}
+                        </div>
+                    @endfor
+                    
+                </div>
+            </div>
+            @elseif (count($videos) != 0 && count($videos) <= 6)
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    @for ($i = 0; $i < 3; $i++)
+                        <div class="col-md-3 ">
+                            {!!$videos[$i]->video!!}
+                        </div>
+                    @endfor
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-center mx-5">
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                <div class="row justify-content-center">
+                    @for ($i = 3; $i < (count($videos)); $i++)
+                        <div class="col-md-3 ">
+                            {!!$videos[$i]->video!!}
+                        </div>
+                    @endfor
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="row justify-content-center mx-5">
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100 " height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-2 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            @elseif (count($videos) != 0 && count($videos) > 6)
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        @for ($i = 0; $i < 3; $i++)
+                        <div class="col-md-3 ">
+                            {!!$videos[$i]->video!!}
+                        </div>
+                    @endfor
                     </div>
                 </div>
-            </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        @for ($i = 3; $i < 6; $i++)
+                        <div class="col-md-3 ">
+                            {!!$videos[$i]->video!!}
+                        </div>
+                    @endfor
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        @if (count($videos) <= 9)
+                            @for ($i = 6; $i < count($videos); $i++)
+                                <div class="col-md-3 ">
+                                    {!!$videos[$i]->video!!}
+                                </div>
+                            @endfor
+                        @else
+                            @for ($i = 6; $i < 9; $i++)
+                                <div class="col-md-3 ">
+                                    {!!$videos[$i]->video!!}
+                                </div>
+                            @endfor
+                        @endif
+                        
+                    </div>
+                </div>
+            @else
+                <p>Pas de videos</p>
+            @endif
+            
         </div>
         <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

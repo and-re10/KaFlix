@@ -18,9 +18,9 @@
                 Filtros
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Codigo</a>
+                <a class="dropdown-item" href="{{route('code')}}">Codigo</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Musica</a>
+                <a class="dropdown-item" href="{{route('music')}}">Musica</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{route('sport')}}">desporto</a>
               </div>

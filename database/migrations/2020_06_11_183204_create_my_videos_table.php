@@ -18,6 +18,7 @@ class CreateMyVideosTable extends Migration
             $table->string('nomVideo');
             $table->string('heureVideo');
             $table->string('video');
+            $table->string('filtre');
             $table->timestamps();
         });
     }

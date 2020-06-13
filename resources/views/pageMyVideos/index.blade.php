@@ -4,6 +4,7 @@
     @include('templates.header')
     @include('pageMyVideos.MyVideos')
     @include('pageMyVideos.addVideoModal')
+    @include('pageMyVideos.myModals')
 
     {{-- <script src="{{asset('js/app.js')}}"></script> --}}
 
@@ -44,7 +45,7 @@
                 });
             });
 
-            // Model test 2
+            // // Model test 2
             // $('#addVideo').submit(function(e){
             //     $.ajaxSetup({
             //         headers: {

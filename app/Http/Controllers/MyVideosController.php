@@ -42,6 +42,7 @@ class MyVideosController extends Controller
         $video->nomVideo = request('name');
         $video->heureVideo = request('heure');
         $video->video = request('video');
+        $video->filtre = request('filtro');
 
         $video->save();
     }
@@ -54,7 +55,9 @@ class MyVideosController extends Controller
      */
     public function show($id)
     {
-        //
+        $video = Myvideo::findOrFail($id);
+        
+        return view("pageMyVideos.pageSolo.index", compact("video"));
     }
 
     /**

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\MyVideo;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/index', function () {
     return view('index');
 });
+
+Route::get('/sport', function () {
+    $videos = MyVideo::all();
+    return view('filters.sports.index', compact('videos'));
+})->name('sport');
 
 Route::resource('/MyVideos', 'MyVideosController');

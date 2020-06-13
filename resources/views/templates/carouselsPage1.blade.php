@@ -1,43 +1,61 @@
 <section>
     <a href=""><h1 class="ml-5 pl-5 text-light">Os meus videos</h1></a>
     {{-- Carousel meus videos --}}
-    <div id="carousel1" class="carousel slide py-5 bg-dark" data-ride="carousel">
+    <div id="carousel1" class="carousel slide py-5" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                <div class="row justify-content-center mx-5">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                <div class="row justify-content-center mx-5">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center mx-5">
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
+                        <iframe class="w-100 " height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
+                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-2 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -54,13 +72,13 @@
     </div>
 </section>
 
-<section class="bg-light pt-5">
-    <a href=""><h1 class="ml-5 pl-5 text-dark">Videos a ver</h1></a>
+<section class="pt-5">
+    <a href=""><h1 class="ml-5 pl-5 text-light">Videos a ver</h1></a>
     {{-- Carousel Videos a ver --}}
-    <div id="carousel2" class="carousel slide py-5 bg-light" data-ride="carousel">
+    <div id="carousel2" class="carousel slide py-5" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row justify-content-around">
+                <div class="row justify-content-center">
                     <div class="col-md-3 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -73,7 +91,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-around">
+                <div class="row justify-content-center">
                     <div class="col-md-3 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -86,7 +104,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-around">
+                <div class="row justify-content-center">
                     <div class="col-md-3 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
@@ -113,43 +131,34 @@
 <section class="pt-5">
     <a href=""><h1 class="ml-5 pl-5 text-light">Videos de Programaçao</h1></a>
     {{-- Carousel Videos de Programaçao --}}
-    <div id="carousel3" class="carousel slide py-5 bg-dark" data-ride="carousel">
+    <div id="carousel3" class="carousel slide py-5" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="row justify-content-around">
-                    <div class="col-md-3 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-3 ">
-                        <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-4 ">
                         <iframe class="w-100" height="300px" src="https://www.youtube.com/embed/gphzDRBl-Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>

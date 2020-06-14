@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\MyVideo;
+use App\Filtre;
 
 class MyVideosController extends Controller
 {
@@ -15,8 +16,9 @@ class MyVideosController extends Controller
     public function index()
     {
         $videos = MyVideo::all();
+        $filtres = Filtre::all();
 
-        return view('pageMyVideos.index', compact('videos'));
+        return view('pageMyVideos.index', compact('videos', 'filtres'));
     }
 
     /**
@@ -37,12 +39,13 @@ class MyVideosController extends Controller
      */
     public function store(Request $request)
     {
+
         $video = new MyVideo();
 
         $video->nomVideo = request('name');
         $video->heureVideo = request('heure');
         $video->video = request('video');
-        $video->filtre = request('filtro');
+        $video->filtre_id = request('filtro_id');
 
         $video->save();
     }

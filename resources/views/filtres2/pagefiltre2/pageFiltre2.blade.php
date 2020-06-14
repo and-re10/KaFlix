@@ -12,8 +12,7 @@
     
 
     <div class="row m-5">
-        @foreach ($videos as $video)
-            @if ($video->filtre === "sport")
+        @foreach ($filtre->myVideos as $video)
             <div class="col-md-3 mt-5">
                 <div id="video" class="card w-100" style="width: 18rem;">
                     <div class="card-body">
@@ -21,7 +20,7 @@
                         {!!$video->video!!}
                         <h5 class="card-title">{{$video->nomVideo}}</h5>
                         <p class="card-text">{{$video->heureVideo}}</p>
-                        <span class="border border-dark">{{$video->filtre}}</span>
+                        <span class="border border-dark">{{$filtre->name}}</span>
                         {{-- <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#modalMyVideo">
                         Ver Video
@@ -30,7 +29,6 @@
                     </div>
                 </div>
             </div>
-            @endif
         @endforeach
     </div>
 </div>

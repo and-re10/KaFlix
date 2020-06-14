@@ -2,6 +2,6 @@
 
 @section('content')
     @include('templates.header')
-    @include('filters.sports.contenu.videoSport')
+    @include('filtres2.pagefiltre2.pageFiltre2')
     
 @endsection

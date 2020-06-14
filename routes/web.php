@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\MyVideo;
+use App\Filtre;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,8 +18,9 @@ use App\MyVideo;
 Route::get('/index', function () {
 
     $videos = MyVideo::all();
+    $filtres = Filtre::all();
 
-    return view('index', compact('videos'));
+    return view('index', compact('videos', 'filtres'));
 });
 
 Route::get('/sport', function () {

@@ -24,7 +24,13 @@
 
             <div class="form-group">
               <label for="">Filtro</label>
-              <input type="text" name="filtro" id="filtro" class="form-control" placeholder="" aria-describedby="helpId">
+              <select class="form-control" name="filtro_id" id="filtro">
+
+                @foreach ($filtres as $filtre)
+                  <option value="{{$filtre->id}}">{{$filtre->name}}</option>
+                @endforeach
+
+              </select>
             </div>
 
             <div class="form-group">

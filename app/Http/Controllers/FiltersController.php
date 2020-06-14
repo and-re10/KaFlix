@@ -50,7 +50,10 @@ class FiltersController extends Controller
      */
     public function show($id)
     {
-        //
+        $filtres = Filtre::all();
+        $filtre = Filtre::findOrFail($id);
+
+        return view('filtres2.index', compact('filtres', 'filtre'));
     }
 
     /**

@@ -9,9 +9,10 @@
         Adicionar um video
         </button> --}}
     </div>
-    
 
-    <div class="row m-5">
+        <h1 class="text-light ml-5 mt-5">Videos de Codigo</h1>
+
+    <div class="row mx-5 mb-5">
         @foreach ($videos as $video)
             @if ($video->filtre === "code")
             <div class="col-md-3 mt-5">

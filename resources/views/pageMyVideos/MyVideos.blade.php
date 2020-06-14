@@ -10,15 +10,16 @@
         </button>
     </div>
     
+    <div class="row my-5"><h1 class="text-light mx-auto">Os Meus Videos</h1></div>
 
-    <div class="row m-5">
+    <div class="row p-0">
         @foreach ($videos as $video)
-            <div class="col-md-3 mt-5">
+            <div class="col-md-3 p-0 my-3">
                 <div id="video" class="card w-100" style="width: 18rem;">
                     <div class="card-body">
                         {{-- {!! $variable !!} afficher une string comme balise --}}
                         {!!$video->video!!}
-                        <h5 class="card-title">{{$video->nomVideo}}</h5>
+                        <h5 class="card-title">{{maxStr($video->nomVideo, 40)}}</h5>
                         <p class="card-text">{{$video->heureVideo}}</p>
                         <span class="border border-dark">{{$video->filtre}}</span>
                         {{-- <!-- Button trigger modal -->

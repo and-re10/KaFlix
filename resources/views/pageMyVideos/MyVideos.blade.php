@@ -4,10 +4,15 @@
         {{-- Button test --}}
         <button type="button" class="btn btn-primary ml-5" id="test">Boutton Test</button>
 
-        <!-- Button trigger modal -->
+        <!-- Button trigger modal video -->
         <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#modalAddVideo">
         Adicionar um video
         </button>
+
+        <!-- Button trigger modal filtro -->
+        <button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#modalAddFilter">
+            Adicionar um filtro
+            </button>
     </div>
     
     <div class="row my-5"><h1 class="text-light mx-auto">Os Meus Videos</h1></div>

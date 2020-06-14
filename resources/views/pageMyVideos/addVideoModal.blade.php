@@ -3,7 +3,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Adicionar Video</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -30,7 +30,7 @@
             <div class="form-group">
               <label for="">Video</label>
               <input type="text" name="video" id="video" class="form-control mb-2" placeholder="" aria-describedby="helpId">
-              <span class="text-dark border border-dark">Rajouter une class="w-100" a l'iframe + height="300px"</span>
+              <span class="text-dark border border-dark p-1">Rajouter une class="w-100" + height="300px" a l'iframe</span>
             </div>
         
             <div class="modal-footer">

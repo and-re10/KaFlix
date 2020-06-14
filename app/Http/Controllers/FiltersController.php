@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Filtre;
 
 class FiltersController extends Controller
 {
@@ -13,7 +14,7 @@ class FiltersController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -34,7 +35,11 @@ class FiltersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $filter = new Filtre();
+
+        $filter->name = request('nom');
+        
+        $filter->save();
     }
 
     /**

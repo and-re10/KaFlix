@@ -36,3 +36,5 @@ Route::get('/music', function () {
 })->name('music');
 
 Route::resource('/MyVideos', 'MyVideosController');
+
+Route::resource('/filters', 'FiltersController');

@@ -13,7 +13,7 @@
                 <div class="row justify-content-center">
                     @for ($i = 0; $i < count($videos); $i++)
                         <div class="col-md-3 ">
-                            {!!$videos[$i]->video!!}
+                            <iframe class="w-100" height="300px"  src="{{$videos[$i]->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     @endfor
                     

@@ -23,21 +23,12 @@ Route::get('/index', function () {
     return view('index', compact('videos', 'filtres'));
 });
 
-Route::get('/sport', function () {
-    $videos = MyVideo::all();
-    return view('filters.sports.index', compact('videos'));
-})->name('sport');
-
-Route::get('/code', function () {
-    $videos = MyVideo::all();
-    return view('filters.code.index', compact('videos'));
-})->name('code');
-
-Route::get('/music', function () {
-    $videos = MyVideo::all();
-    return view('filters.music.index', compact('videos'));
-})->name('music');
-
 Route::resource('/MyVideos', 'MyVideosController');
+Route::post('/video/store', 'MyVideosController@store')->name('video.store');
 
 Route::resource('/filters', 'FiltersController');
+Route::post('/filter/store', 'FiltersController@store')->name('filter.store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

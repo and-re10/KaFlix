@@ -1,0 +1,4 @@
+1° Créer un nouveau filtre dans les catégories 
+2° Organization des cards et videos
+3° Créer un controller pour les noms de specidfiques (ajouter le nom aux videos qui l'appartiennent)
+4° 

@@ -37227,6 +37227,8 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./postvideo */ "./resources/js/postvideo.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37274,6 +37276,73 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/postvideo.js":
+/*!***********************************!*\
+  !*** ./resources/js/postvideo.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  $('#test').click(function () {
+    alert('Hello World, Premier Test!');
+  }); // Model test 1
+
+  $('#addVideo').submit(function (e) {
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    e.preventDefault(); // requettes via ajax sans chargament de page
+
+    $.ajax({
+      // Type de methode 
+      type: "POST",
+      // Route du controller
+      url: "video/store",
+      // Verification des donnees dans le formulaire
+      data: $('#addVideo').serialize(),
+      // En cas de Success
+      success: function success(response) {
+        console.log(response);
+        $("#modalAddVideo").modal('hide');
+        alert('Data Saved');
+        location.reload();
+      },
+      // En cas de Error
+      error: function error(_error) {
+        alert("Data Not Saved");
+      }
+    });
+  }); // Model pour les filtres
+
+  $('#addFilter').submit(function (e) {
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "filter/store",
+      data: $('#addFilter').serialize(),
+      success: function success(response) {
+        console.log(response);
+        $('#modalAddFilter').modal('hide');
+        alert('Data Saved');
+        location.reload();
+      },
+      error: function error(_error2) {
+        alert('Data Not Saved');
+      }
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -37292,8 +37361,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/andre/Desktop/KarayFlix/KaFlix/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/andre/Desktop/KarayFlix/KaFlix/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/KaFlix/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/KaFlix/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

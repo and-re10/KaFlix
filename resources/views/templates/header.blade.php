@@ -18,11 +18,6 @@
                 Filtros
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                {{-- <a class="dropdown-item" href="{{route('code')}}">Codigo</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{route('sport')}}">Musica</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{route('sport')}}">desporto</a> --}}
                 @foreach ($filtres as $filtre)
                   <a class="dropdown-item" href="{{route('filters.show', $filtre->id)}}">{{$filtre->name}}</a>
                   <div class="dropdown-divider"></div>

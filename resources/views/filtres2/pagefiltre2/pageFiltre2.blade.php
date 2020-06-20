@@ -17,6 +17,8 @@
                 <div id="video" class="card w-100" style="width: 18rem;">
                     <div class="card-body">
                         {{-- {!! $variable !!} afficher une string comme balise --}}
+                        {{-- Changer comme avant l'iframe --}}
+                        <iframe class="w-100" height="300px"  src="{{$video->video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         {!!$video->video!!}
                         <h5 class="card-title">{{$video->nomVideo}}</h5>
                         <p class="card-text">{{$video->heureVideo}}</p>
